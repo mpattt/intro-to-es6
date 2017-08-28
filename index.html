@@ -2,15 +2,73 @@
 <html>
 <head>
 <title> MPattt's Keyboard</title>
-<script src='build/main.bundle.js'></script>
-
 <style>
-.keyboard {
-background-color: black;}
+	.keyboard {
+		width:720px;
+		text-align: center;
+	}
+	.key1 {
+		background-color: #A4C8F0;
+		width:50px;
+		height:50px;
+		border-style: inset;
+		display: inline-block;
+	}
+	.key1:hover {
+	background-color: white;
+	}
+	.key2 {
+		background-color: #A4C8F0;
+		width:80px;
+		height:50px;
+		display: inline-block;
+		border-style: inset;
+	}
+	.key2:hover{
+		background-color: red;
+		color: white;
+	}
+	.key3 {
+		background-color: #A4C8F0;
+		width:356px;
+		height:50px;
+		display: inline-block;
+		border-style: inset;
+	}
+	.key3:hover{
+		background-color: white;
+		color: white;
+	}
+	#test {
+		border-style: ridge;
+		padding: 50px;
+		width:900px;
+		font-size:50px;
+	}
 </style>
 </head>
 <body>
-<div class="keyboard">test<div>
+	<center>
+	<p id="test"></p><br>
+	<div class="keyboard">
+		<div class="row1">
+			<div class="key1">~ `</div><div class="key1" onclick="key(this.innerHTML)">1</div><div class="key1" onclick="key(this.innerHTML)" >2</div><div class="key1" onclick="key(this.innerHTML)">3</div><div class="key1" onclick="key(this.innerHTML)">4</div><div class="key1" onclick="key(this.innerHTML)">5</div><div class="key1" onclick="key(this.innerHTML)">6</div><div class="key1" onclick="key(this.innerHTML)">7</div><div class="key1" onclick="key(this.innerHTML)">8</div><div class="key1" onclick="key(this.innerHTML)">9</div><div class="key1" onclick="key(this.innerHTML)">0</div><div class="key2" onclick="keydel()">delete</div>
+		</div>
+		<div class="row2">
+			<div class="key1">.</div><div class="key1" onclick="key(this.innerHTML)">q</div><div class="key1" onclick="key(this.innerHTML)">w</div><div class="key1" onclick="key(this.innerHTML)">e</div><div class="key1" onclick="key(this.innerHTML)">r</div><div class="key1" onclick="key(this.innerHTML)">t</div><div class="key1" onclick="key(this.innerHTML)">y</div><div class="key1" onclick="key(this.innerHTML)">u</div><div class="key1" onclick="key(this.innerHTML)">i</div><div class="key1" onclick="key(this.innerHTML)">o</div><div class="key1" onclick="key(this.innerHTML)">p</div><div class="key2">.</div>
+		</div>
+		<div class="row3">
+			<div class="key1">.</div><div class="key1" onclick="key(this.innerHTML)">a</div><div class="key1" onclick="key(this.innerHTML)">s</div><div class="key1" onclick="key(this.innerHTML)">d</div><div class="key1" onclick="key(this.innerHTML)">f</div><div class="key1" onclick="key(this.innerHTML)">g</div><div class="key1" onclick="key(this.innerHTML)">h</div><div class="key1" onclick="key(this.innerHTML)">j</div><div class="key1" onclick="key(this.innerHTML)">k</div><div class="key1" onclick="key(this.innerHTML)">l</div><div class="key1">.</div><div class="key2">.</div>
+		</div>
+		<div class="row4">
+			<div class="key1" id="keyshift" onclick="keyshift()">s</div><div class="key1" onclick="key(this.innerHTML)">z</div><div class="key1" onclick="key(this.innerHTML)">x</div><div class="key1" onclick="key(this.innerHTML)">c</div><div class="key1" onclick="key(this.innerHTML)">v</div><div class="key1" onclick="key(this.innerHTML)">b</div><div class="key1" onclick="key(this.innerHTML)">n</div><div class="key1" onclick="key(this.innerHTML)">m</div><div class="key1" onclick="key(this.innerHTML)">_</div><div class="key1" onclick="key(this.innerHTML)">.</div><div class="key1">.</div><div class="key2" onclick="key1()">clear</div>
+		</div>
+		<div class="row5">
+			<div class="key1">.</div><div class="key1">.</div><div class="key1">.</div><div class="key3" onclick="spacebar()">&nbsp;</div><div class="key1">.</div><div class="key1">.</div><div class="key1">.</div>
+		</div> 
+	</div>
+	</center>
+<script src='build/main.bundle.js'></script>
 </body>
 
 
