@@ -74,6 +74,10 @@ function keyenter(){
 	document.getElementById("test").innerHTML =  document.getElementById("test").innerHTML + '\n' ;
 
 }
+function keytab(){
+	document.getElementById("test").innerHTML =  document.getElementById("test").innerHTML + '\t' ;
+
+}
 
 
 
