@@ -43,15 +43,19 @@
 	}
 	#test {
 		border-style: ridge;
-		padding: 50px;
+		height: 200px;
+		padding:20px;
 		width:900px;
-		font-size:50px;
+		font-size:25px;
+		resize: none;
+		disabled: false;
 	}
 </style>
 </head>
 <body>
 	<center>
-	<p id="test"></p><br>
+	<h1>HW2 - Virtual Keyboard</h1>
+	<textarea disabled id="test"></textarea><br>
 	<div class="keyboard">
 		<div class="row1">
 			<div class="key1">~ `</div><div class="key1" onclick="key(this.innerHTML)">1</div><div class="key1" onclick="key(this.innerHTML)" >2</div><div class="key1" onclick="key(this.innerHTML)">3</div><div class="key1" onclick="key(this.innerHTML)">4</div><div class="key1" onclick="key(this.innerHTML)">5</div><div class="key1" onclick="key(this.innerHTML)">6</div><div class="key1" onclick="key(this.innerHTML)">7</div><div class="key1" onclick="key(this.innerHTML)">8</div><div class="key1" onclick="key(this.innerHTML)">9</div><div class="key1" onclick="key(this.innerHTML)">0</div><div class="key2" onclick="keydel()">delete</div>

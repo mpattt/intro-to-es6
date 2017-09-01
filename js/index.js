@@ -71,7 +71,7 @@ function spacebar(){
 
 }
 function keyenter(){
-	document.getElementById("test").innerHTML =  document.getElementById("test").innerHTML + '<br>' ;
+	document.getElementById("test").innerHTML =  document.getElementById("test").innerHTML + '\n' ;
 
 }
 
